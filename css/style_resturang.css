@@ -17,7 +17,7 @@
     "fo";
 }
 
-h1 {
+#header_main {
     grid-area: he;
     background-color: blue;
 }
@@ -30,7 +30,7 @@ nav {
 main {
     grid-area: ma;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 700px 135px;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
     "s1 s1 as"
@@ -62,4 +62,96 @@ aside {
 footer {
     grid-area: fo;
     background-color: green;
+}
+
+#meny_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 800px;
+
+    grid-template-areas: 
+    "mhe"
+    "mna"
+    "mma";
+}
+
+#meny_header {
+    grid-area: mhe;
+    background-color: blue;
+}
+
+#meny_nav {
+    grid-area: mna;
+}
+
+#meny_main {
+    grid-area: mma;
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 150px 100px 150px 100px;
+    grid-area: 
+    "ms01 ms02 ms03"
+    "ms04 ms05 ms06"
+    "ms07 ms08 ms09"
+    "ms10 ms11 ms12";
+}
+
+.bilder {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+}
+
+.text {
+    background-color: white;
+}
+
+#m_section01{
+    grid-area: ms01;
+    
+}
+
+#m_section02{
+    grid-area: ms02;
+}
+
+#m_section03{
+    grid-area: ms03;
+}
+
+#m_section04{
+    grid-area: ms04;
+}
+
+#m_section05{
+    grid-area: ms05;
+}
+
+#m_section06{
+    grid-area: ms06;
+}
+
+#m_section07{
+    grid-area: ms07;
+}
+
+#m_section08{
+    grid-area: ms08;
+}
+
+#m_section09{
+    grid-area: ms09;
+}
+
+#m_section10{
+    grid-area: ms10;
+}
+
+#m_section11{
+    grid-area: ms11;
+}
+
+#m_section12{
+    grid-area: ms12;
 }
