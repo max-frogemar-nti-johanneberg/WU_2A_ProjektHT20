@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
+
+/* Resturangens css */
+
 #gridwrapper_resturang {
     display: grid;
 
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 500px 1fr;
+    grid-template-rows: 1fr 1fr 600px 1fr;
 
     grid-template-areas: 
     "he"
@@ -17,17 +20,35 @@
     "fo";
 }
 
-#header_main {
+#r_header {
     grid-area: he;
     background-color: blue;
+    font-size: larger;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-nav {
+#r_nav {
     grid-area: na;
     background-color: royalblue;
+    display: flex;
+    justify-content: center;
 }
 
-main {
+#r_ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.r_links {
+    display: flex;
+    text-decoration: none;
+}
+
+#r_main {
     grid-area: ma;
     display: grid;
     grid-template-columns: 700px 135px;
@@ -41,13 +62,13 @@ main {
     padding: 10px;
 }
 
-#section_1 {
+#r_section_1 {
     grid-area: s1;
     background-color: red;
     margin: 2px;
 }
 
-#section_2 {
+#r_section_2 {
     grid-area: s2;
     background-color: darkred;
     margin: 2px, 20px, 2px, 2px;
@@ -59,15 +80,17 @@ aside {
     margin: 2px;
 }
 
-footer {
+#r_footer {
     grid-area: fo;
     background-color: green;
 }
 
-#meny_wrapper {
+/* Menyns css */
+
+#m_wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 800px;
+    grid-template-rows: 2fr 1fr 1400px;
 
     grid-template-areas: 
     "mhe"
@@ -75,22 +98,33 @@ footer {
     "mma";
 }
 
-#meny_header {
+#m_header {
     grid-area: mhe;
+    font-size: larger;
     background-color: blue;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
-#meny_nav {
+#m_nav {
     grid-area: mna;
+    background-color: royalblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#meny_main {
+#m_main {
     grid-area: mma;
+    background-color: chartreuse;
+    padding: 50px;
 
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 150px 100px 150px 100px;
-    grid-area: 
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 150px 500px 150px 500px;
+    
+    grid-template-areas: 
     "ms01 ms02 ms03"
     "ms04 ms05 ms06"
     "ms07 ms08 ms09"
@@ -98,25 +132,22 @@ footer {
 }
 
 .bilder {
-    height: 200px;
-    width: 200px;
-    background-color: white;
+    height: auto;
+    width: 300px;
+    padding: 10px;
+    display: block;
 }
 
-.text {
-    background-color: white;
-}
-
-#m_section01{
+#bild_1{
     grid-area: ms01;
     
 }
 
-#m_section02{
+#bild_2{
     grid-area: ms02;
 }
 
-#m_section03{
+#bild_3{
     grid-area: ms03;
 }
 
@@ -132,15 +163,15 @@ footer {
     grid-area: ms06;
 }
 
-#m_section07{
+#bild_4{
     grid-area: ms07;
 }
 
-#m_section08{
+#bild_5{
     grid-area: ms08;
 }
 
-#m_section09{
+#bild_6{
     grid-area: ms09;
 }
 
@@ -155,3 +186,5 @@ footer {
 #m_section12{
     grid-area: ms12;
 }
+
+/* leverantörens css */
