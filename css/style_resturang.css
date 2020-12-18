@@ -27,13 +27,21 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+}
+
+#r_logo {
+    width: auto;
+    height: 40px;
 }
 
 #r_nav {
     grid-area: na;
     background-color: royalblue;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #r_ul {
@@ -41,11 +49,18 @@
     flex-direction: row;
     align-items: center;
     list-style: none;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+a:visited {
+    color: blue;
 }
 
 .r_links {
     display: flex;
     text-decoration: none;
+    justify-content: space-evenly;
 }
 
 #r_main {
@@ -60,24 +75,30 @@
 
     background-color: greenyellow;
     padding: 10px;
+    background-image: url(../img/rsz_mat_backrund_2.jpg);
+    width: auto;
+    height: 600px;
 }
 
 #r_section_1 {
     grid-area: s1;
     background-color: red;
-    margin: 2px;
+    margin: 20px;
+    height: 150px;
 }
 
 #r_section_2 {
     grid-area: s2;
     background-color: darkred;
-    margin: 2px, 20px, 2px, 2px;
+    margin: 20px;
+    height: 250px;
 }
 
 aside {
     grid-area: as;
     background-color: pink;
-    margin: 2px;
+    margin: 10px;
+    height: 300px;
 }
 
 #r_footer {
@@ -188,3 +209,33 @@ aside {
 }
 
 /* leverantörens css */
+
+#l_wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 550px 1fr;
+
+    grid-template-areas: 
+    "lhe"
+    "lma"
+    "lfo";
+}
+
+#l_header{
+    grid-area: lhe;
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#l_main{
+    grid-area: lma;
+    background-color: chartreuse;
+    padding: 100px;
+}
+
+#l_footer{
+    grid-area: lfo;
+    background-color: cornflowerblue;
+}
