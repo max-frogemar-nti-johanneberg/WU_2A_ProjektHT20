@@ -23,7 +23,7 @@
 
     <h2>1. Idébeskrivning</h2>
     <!-- Vad ska du göra? Vilken är din målgrupp? Om du utvecklar en tidigare sida; Vad ska du förändra/utveckla? -->
-    Huvudsidan av vår resturang sida ska innehålla vår historia och standard för mat medans två länkar i hemsidan ska länka till våran meny och tillverkare. Det kommer vara en italiensk resturang med massa av mina favorit rätter. Det kommer vara tänkt att vara en medelklass resturang med riktigt god mat där alla kan njuta av det, även om du är på en dejt eller är ute med vänner.
+    Huvudsidan av vår resturang sida ska innehålla vår historia och standard för mat medans två länkar i hemsidan ska länka till våran meny och tillverkare. Det kommer vara en italiensk resturang med massa av mina favorit rätter. Det kommer vara tänkt att vara en "medelklass" resturang med riktigt god mat där alla kan njuta av det, även om du är på en dejt eller är ute med vänner. En general italiensk resturang ungefär. Jag tänkte döpa den "Grazie" men har nu ändrat det till "Narancia"
 
 
     <h2>2. Planering</h2>
@@ -77,7 +77,7 @@
         <tr>           
             <td>50</td>
             <td>
-                Lägg till alla bilder och göra alla cola trick med flex
+                Lägg till alla bilder och göra alla cola trick med flex, eventuellt fixa massa saker också.
             </td>
             <td>
                 Gör färdigt allt om det inte har gjorts tidigare
@@ -104,19 +104,45 @@
     Lektion 2: Jag testade validator för att se om det var når fel i koden som skapade det här problemet. Det fanns några varningar men ingenting som skulle fixa det, de få varningar som jag fick kommer fixas när min html-sida är klart, men för att vara säker kommer jag testa igen när jag tror att den är klar. Jag började sätta id på många av mina taggar, när jag satte en id på min header fixade de det problemet.
     <img src="/WU_2A_ProjektHT20/img/rättning_1.png" height="200px" width="auto" alt="Första rättning">
     Ett annat liknande problem har uppstått i min meny sida. visas här:
-    <img src="/WU_2A_ProjektHT20/img/fel_2.png" alt="andra felet">
-    Jag byggde för mycket innan att jag testa min sida, så mina bilder är inte på den platsen den ska vara.
+    <img src="/WU_2A_ProjektHT20/img/fel_2.png" height="200px" width="auto" alt="andra felet">
+    Jag byggde för mycket kod innan att jag testa min sida, så nu kommer det vara svårare att hitta felet. Problemet är att mina bilder är inte på den platsen den ska vara.
     <!-- Fyll på med dokumentation här. -->
 
     <h3>Lektioner vecka 50</h3>
-    Lektion 1 och 2: Idag har jag gjort väldigt mycket, jag kommer inte skriva allt denna pushen men gör det nästa  
+    Lektion 1 och 2: Idag har jag gjort väldigt mycket. De mesta jag gjorde var att lägga till bilder och fixa texten och layouten.
+    Jag har inte än hittat problemet, men jag får fixa det hemma.
+    Jag är hemma nu och har hittat felet där min meny vill ville gå in i mitt grid som jag gjorde i css. Felet jag gjorde var att jag använde fel tag. Jag använde "grid-area" istället för "grid-template-area" när jag gjorde griden.
+    <img src="/WU_2A_ProjektHT20/img/lösning_2_och_3_bild_2.png" height="200px" width="auto" alt="Andra lösningen">  
+    Jag har fixat alla layout saker, mitt färgschema och loga. Jag tror den är färdig och ska testa massa saker för att se om den är.
     <!-- Fyll på med dokumentation här. -->
 
 
     <h2>4. Testning</h2>
+    Jag kommer testa alla tre sidor i en valederings hemsida för att se om min html inte har några små fel eller annat. (https://validator.w3.org/)
+    index: Inga fel eller varningar
+    meny: Några varningar, alla varningar berodde att jag inte hade någon huvudrubrik eller h1-h6 tag på min text som beskrev rätterna. Det är inget stort problem och behöver inte fixas.
+    leverantör: två error, jag hade placerat ut slutet av en p tag på fel ställen. Om de inte fixas kan det skapa css-fel, är nu fixat. Några varnningar också om att inte ha någon huvudrubrik.
+    CSS: inga fel (https://jigsaw.w3.org/css-validator/)
+
+    Jag har nu testat mitt färg schema över alla tre sidor. Det var några små fel men mitt färg schema är inspererad av italienska flagan och har gjort att de värsta fallen hamnar där det inte finns mycket text. Så inte mycket fel. (https://contrastchecker.com/)
+
+    Alla sidor funkar i chrome, safari och firefox. Har inte kollat på min telefon för det står inte att man ska det.
+    <img src="/WU_2A_ProjektHT20/img/chrome_index_test.png" height="200px" width="auto" alt="">
+    <img src="/WU_2A_ProjektHT20/img/chrome_meny_test.png" height="200px" width="auto" alt="">
+    <img src="/WU_2A_ProjektHT20/img/chrome_leverantor_test.png" height="200px" width="auto" alt="">
+    <img src="/WU_2A_ProjektHT20/img/firefox_index_test.png" height="200px" width="auto" alt="">
+    <img src="/WU_2A_ProjektHT20/img/firefox_meny_test.png" height="200px" width="auto" alt="">
+    <img src="/WU_2A_ProjektHT20/img/firefox_leverantor_test.png" height="200px" width="auto" alt="">
+    <img src="/WU_2A_ProjektHT20/img/edge_index_test.png" height="200px" width="auto" alt=""> En tag misslyckades
+    <img src="/WU_2A_ProjektHT20/img/edge_meny_test.png" height="200px" width="auto" alt="">
+    <img src="/WU_2A_ProjektHT20/img/edge_leverantor_test.png" height="200px" width="auto" alt="">
+
+
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? -->
 
     <h2>5. Utvärdering (skrivs i slutet av arbetet, innan inlämning)</h2>
+    Jag skulle säga att det mesta har gått bra. Jag fick ut en planering som jag höll mig till bra och gjorde att jag gjorde mycket arbete. Det var några små fel men de uppståd mest från oerfarenhet och jag kunde fixa dem utan några stora problem och kommer förbättra mig med det i framtiden.
+    Nästa gång kommer jag defentivt fortsätta med en planering och skiss. En annan sak som jag kunde ha förbättrat är med fler skisser! Om jag hade gjort en till skiss av mina hemsidor kunde jag ha ändrat saker som jag ansåg som problem. Det var inte ett stort problem men det kunde ha förbättrat saker.
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
